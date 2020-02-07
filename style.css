@@ -1,6 +1,6 @@
 body
 {
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
 	font-size:14px;
 }
 
@@ -46,7 +46,7 @@ div.row
 	display: inline-block;
 	text-align: center;
 	margin: auto;
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	
 	font-weight: bold;
 	letter-spacing: 0.5em;
 	padding: 20px 0px 40px 0px;
@@ -88,7 +88,6 @@ div#2nd_row
 h3
 {
 	font-size: 14px;
-	font-family: 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;
 	background-color: #595959;
 	color: white;
 	text-align: center;
@@ -171,8 +170,7 @@ h3
 }       
 
 .job_position
-{
-	font-family: 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;  
+{ 
 	font-weight: 900;
 	text-align: center;
 	font-size: 16px;
@@ -180,7 +178,6 @@ h3
 
 .job_year
 {
-	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; 
 	font-weight: normal;
 	text-align: center;
 	font-style: italic;
@@ -197,7 +194,7 @@ h3
 }
 
 .mini_picture
-{
+{ 
 	width: 15px;
 	height: 15px;
 }
