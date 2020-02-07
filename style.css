@@ -1,0 +1,208 @@
+body
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+#background
+{
+	position: absolute; top: 23px; height: 153px; width: 100%; left: 0%; background: #F1DACC; z-index: -1;
+}
+
+#container
+{
+	height:297mm;
+	width:210mm;
+	margin: 20mm auto;
+	border: lightgray 1px solid;
+	position: relative;
+	font-weight:bold;	 
+}
+
+div.row
+{
+	margin:10px;
+	width:100%;
+	height:180px;
+	/*border: 2px solid orange;*/
+	/*margin-left:-2px;*/
+}
+
+#photo_section
+{
+	/*border: 2px solid red;*/
+	width:240px;
+	margin-left:20px;
+	display: inline-block;
+	position: relative;
+}
+
+#CV_name
+{
+	/*border: 2px solid blue;*/
+	position: absolute;
+	width:500px;
+	height:120px;
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.5em;
+	padding: 20px 0px 40px 0px;
+}
+
+div#2nd_row
+{
+	display: inline-block;
+}
+
+#side_section
+{
+	/*border: 2px solid purple;*/
+	width:230px;
+	
+	float:left;	
+	position:relative;
+	display: block;
+	margin-left:30px;
+}
+
+
+#photo
+{
+	width: 180px;
+	height: 180px;
+	display: block;
+	margin:0px auto;
+}
+
+#main_section
+{
+	display: inline-block;
+	/*border: 2px solid green;*/
+	position: absolute;
+	margin: 0 30px;
+}
+
+h3
+{
+	font-size: 14px;
+	font-family: 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #595959;
+	color: white;
+	text-align: center;
+	margin-left: -8px;
+	margin-right: -8px;
+	padding:3px 0;
+	letter-spacing: 0.3em;
+}
+
+#mini_left_side
+{
+	/*border: 1px solid lightgray;*/
+	display: inline-block;
+	position:relative;
+	width:50%;
+	margin-left:-2px;
+}  
+
+#mini_right_side
+{
+	/*border: 1px solid red;*/
+	display: inline-block;
+	position: absolute;
+	width:50%;
+	margin-left:-8px;
+}  
+
+.skill_container 
+{
+	border: solid black 2px;
+	float: right;
+	width: 42%;
+	height: 8px;
+	background-color: white;
+}
+
+.bar   
+{
+	background-color: #F1DACC;
+	height:inherit;
+}
+.sales
+{
+	width: 90%;
+}
+
+.strategy 
+{
+	width: 80%;
+}
+
+.budget 
+{
+	width: 60%;
+}
+
+.planning 
+{
+	width: 80%;
+}
+
+.presentation
+{
+	width: 70%;
+}  
+
+.italian
+{
+	width: 100%;
+} 
+ 
+.english
+{
+	width: 80%;
+}  
+
+.french
+{
+	width: 60%;
+}       
+
+.job_position
+{
+	font-family: 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;  
+	font-weight: 900;
+	text-align: center;
+	font-size: 16px;
+}
+
+.job_year
+{
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; 
+	font-weight: normal;
+	text-align: center;
+	font-style: italic;
+	font-size: 16px;
+}
+
+.job_description, #about_me
+{
+	font-family: 'Alef', Arial, Helvetica, sans-serif;
+	text-align: justify;
+	font-size: 14px;
+	font-weight:300;
+	letter-spacing: 0.03em;
+}
+
+.mini_picture
+{
+	width: 15px;
+	height: 15px;
+}
+
+#mini_left_side .job_position, #mini_left_side .job_year, #mini_right_side .job_position, #mini_right_side .job_year
+{
+	text-align: left;
+}	
