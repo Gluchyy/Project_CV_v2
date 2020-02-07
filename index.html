@@ -8,73 +8,115 @@
 		<meta name="author" content="AO">
 		<meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<link href='https://fonts.googleapis.com/css?family=Cormorant Infant' rel='stylesheet'>-->
+        <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
         <!--<link rel="stylesheet" href="style.css">-->
         <style type="text/css">
 			/*<![CDATA[*/
 			        
 			body
 			{
-				font-size:20px;
-				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				font-size:14px;
 			}
 			
 			#background
 			{
-				position: absolute; top: 30px; height: 200px; width: 100%; left: 0%; background: #F0D8CC; z-index: -1;
+				position: absolute; top: 23px; height: 153px; width: 100%; left: 0%; background: #F1DACC; z-index: -1;
 			}
 			
-			#container /*glowny blok majacy za zadanie trzymanie strony w ryzach*/
+			#container
 			{
 				height:297mm;
 				width:210mm;
-				/* to centre page on screen*/
 				margin: 20mm auto;
 				border: lightgray 1px solid;
 				position: relative;
 				font-weight:bold;	 
 			}
+	
+			div.row
+			{
+				margin:10px;
+				width:100%;
+				height:180px;
+				/*border: 2px solid orange;*/
+				/*margin-left:-2px;*/
+			}
 			
-			div#row
+			#photo_section
+			{
+				/*border: 2px solid red;*/
+				width:240px;
+				margin-left:20px;
+				display: inline-block;
+				position: relative;
+			}
+			
+			#CV_name
+			{
+				/*border: 2px solid blue;*/
+				position: absolute;
+				width:500px;
+				height:120px;
+				display: inline-block;
+				text-align: center;
+				margin: auto;
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				font-weight: bold;
+				letter-spacing: 0.5em;
+				padding: 20px 0px 40px 0px;
+			}
+
+			div#2nd_row
 			{
 				display: inline-block;
 			}
 			
 			#side_section
 			{
-				padding: 20px 30px;
-				border: 2px solid purple;
-				width:190px;
-				height:275mm;
+				/*border: 2px solid purple;*/
+				width:230px;
+				
 				float:left;	
 				position:relative;
-				font-size:12px;
 				display: block;
-				margin-left:20px;
-				margin-top:20px;
+				margin-left:30px;
+			}
+			
+			
+			#photo
+			{
+				width: 180px;
+				height: 180px;
+				display: block;
+				margin:0px auto;
 			}
 			
 			#main_section
 			{
 				display: inline-block;
-				border: 1px solid green;
+				/*border: 2px solid green;*/
 				position: absolute;
-				margin-left:20px;
-				top:20px;
-				margin-right: 20px;
+				margin: 0 30px;
 			}
-			
+
 			h3
 			{
-				background-color: gray;
+				font-size: 14px;
+				font-family: 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;
+				background-color: #595959;
 				color: white;
 				text-align: center;
+				margin-left: -8px;
+				margin-right: -8px;
+				padding:3px 0;
+				letter-spacing: 0.3em;
 			}
 
 			#mini_left_side
 			{
+				/*border: 1px solid lightgray;*/
 				display: inline-block;
-				border: 1px solid lightgray;
 				position:relative;
 				width:50%;
 				margin-left:-2px;
@@ -82,8 +124,8 @@
 			
 			#mini_right_side
 			{
+				/*border: 1px solid red;*/
 				display: inline-block;
-				border: 1px solid red;
 				position: absolute;
 				width:50%;
 				margin-left:-8px;
@@ -93,20 +135,19 @@
 			{
 				border: solid black 2px;
 				float: right;
-				width: 50%;
-				height: 10px;
+				width: 42%;
+				height: 8px;
 				background-color: white;
 			}
 			
-			
 			.bar   
 			{
-				background-color: #F0D8CC;
+				background-color: #F1DACC;
 				height:inherit;
 			}
 			.sales
 			{
-				width: 50%;
+				width: 90%;
 			}
 			
 			.strategy 
@@ -121,28 +162,71 @@
 			
 			.planning 
 			{
-				width: 60%;
+				width: 80%;
 			}
 			
 			.presentation
 			{
-				width: 60%;
+				width: 70%;
 			}  
 			
 			.italian
 			{
-				width: 60%;
+				width: 100%;
 			} 
 			 
 			.english
 			{
-				width: 60%;
+				width: 80%;
 			}  
 			
 			.french
 			{
 				width: 60%;
 			}       
+			
+			.job_position
+			{
+				font-family: 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;  
+				font-weight: 900;
+				text-align: center;
+				font-size: 16px;
+			}
+			
+			.job_year
+			{
+				font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; 
+				font-weight: normal;
+				text-align: center;
+				font-style: italic;
+				font-size: 16px;
+			}
+			
+			.job_description, #about_me
+			{
+				font-family: 'Alef', Arial, Helvetica, sans-serif;
+				text-align: justify;
+				font-size: 14px;
+				font-weight:300;
+				letter-spacing: 0.03em;
+			}
+			
+			.mini_picture
+			{
+				width: 15px;
+				height: 15px;
+			}
+			
+			#mini_left_side .job_position, #mini_left_side .job_year, #mini_right_side .job_position, #mini_right_side .job_year
+			{
+				text-align: left;
+			}
+	
+			/* transform: scaleX(0.9);
+	transform-origin: 0 0;
+}
+*/
+			
         	/*]]>*/
 		</style>
         
@@ -152,30 +236,35 @@
 				
 				<div id="background"> </div>
 				
-		     	<div class="row"> <!-- start row -->
-		     		<div id="side_section"> <!-- start boczna -->
+				<div class="row"> <!-- start row -->
+		     		<div id="photo_section"> <!-- start photo_section -->
 			     		<img id="photo" src="images/CV_2_photo.jpg" alt="my photo">
+			     	</div> <!-- end photo_section -->
+			     	
+			     	<div id="CV_name"> <!-- start CV_name -->
+			     		<h1>LAURA JANSSEN</h1>
+			     		<hr width="100px" color="black" align="center" />
+			     		<br>
+			     		<span>CURRICULUM VITAE<span>
+			     	</div> <!-- end CV_name -->
+				</div> <!-- end row -->
+		     	<div class="2nd_row"> <!-- start 2ndrow -->
+		     		<div id="side_section"> <!-- start side_section -->
 			     		<nav>
 			     			<h3>CONTACT</h3>
-			     			<br>
-			     			<p><img class="mini_picture" src="images/CV_2_phone.jpg" alt="phone">&nbsp; &nbsp; &nbsp; +39 (0)3 1234568</p>
+			     			<p><img class="mini_picture" src="images/CV_2_phone.jpg" alt="phone">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; +39 (0)3 1234568</p>
 			     			
-			     			<p><img class="mini_picture" src="images/CV_2_email.jpg" alt="email">&nbsp; &nbsp; &nbsp; janssen@xmail.com</p>
+			     			<p><img class="mini_picture" src="images/CV_2_email.jpg" alt="email">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; janssen@xmail.com</p>
 			     			
-			     			<p><img class="mini_picture" src="images/CV_2_linkedin.jpg" alt="linkedin">&nbsp; &nbsp; &nbsp; Linkedin.com</p>
+			     			<p><img class="mini_picture" src="images/CV_2_linkedin.jpg" alt="linkedin">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Linkedin.com</p>
 			     			
-			     			<p><img class="mini_picture" src="images/CV_2_adress.jpg" alt="adress">&nbsp; &nbsp; &nbsp; Milan, Italy</p>
+			     			<p><img class="mini_picture" src="images/CV_2_adress.jpg" alt="adress">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Milan, Italy</p>
 			     			
 			     		</nav>
-			     		<div>
 			     		<br>
 			     		<h3>PROFILE</h3>
-			     		<br>
 			     		<p id="about_me">Lorem ipsum dolor sit amet, qui ad porro oblique, consul demo critum mea no, congue populo volumus vis el. Eum eu stet nobis, porto munere has ei. Eam ei facilisi consequ untur. Cum soleat opoteat co ceptam an.</p>
-			     		
-			     		</div>		
-			     		
-			     		<div class="skills">
+			     		<div class="skills"> <!-- start skills -->
 			     			<h3>SKILLS</h3>
 
 							Sales
@@ -232,35 +321,34 @@
 			     			<p>Photography</p>
 			     			<p>Film</p>
 			     			
-			     		</div>
+			     		</div> <!-- end skills -->
 			     		
-			     	</div> <!-- koniec boczna -->
+			     	</div> <!-- koniec side_section -->
 			     	<div id="main_section"> <!-- start main section -->
-			     	<header>
-			     		<h1>LAURA JANSSEN</h1>
-			     		<hr width="30%" color="black" align="center" />
-			     		
-			     		<h2>CURRICULUM VITAE</h2>
-			     	</header>
-			     
+			     	
 			     		<h3 class="h3_border">EXPERIENCE</h3>
 			     		
 			     		<div class="job_position">Key Account Manager</div> 
 			     		<div class="job_year">Ipsum SRL Milan | 2009-present</div>
 			     		<div class="job_description">Lorem ipsum dolor sit amet, sint everti animal ad mea, sit nostro fierent no, nulla civibus insolens ut ius. Ea pri noster possim, nec cibo populo cu. Possim sensibus quo ne, nam tritani suscipit intellegat id. Ea pro probatus invenire, vix cu causae argumentum. Inciderint definitiones ne usu, alterum impedit ne nec, ex vero congue qui.</div>
-			     		 
+			     		<br>
+			     		<br>
+			     		<br>
 						<div class="job_position">Account Manager</div> 
 			     		<div class="job_year">Ipsum SRL Milan | 2005-2009</div>
 			     		<div class="job_description">Lorem ipsum dolor sit amet, fastidii mnesa rchum ei pri. Ut ubique populo iisque sed, pri detracto vituperata cu. Ad elingendi consulatu necessitatius mel, repu diare perci. Ea pro probatus invenire, vix cu causae argumentum. Inciderint definitiones ne usu, alterum impedit ne nec, ex vero congue qui.</div>
-			     		 
+			     		<br>
+			     		<br> 
 						<div class="job_position">Sales Assistant</div> 
 			     		<div class="job_year">Ipsum SRL Milan | 2004-2005</div>
 			     		<div class="job_description">Lorem ipsum dolor sit amet, fastidii mnesa rchum ei pri. Ut ubique populo iisque sed, pri detracto vituperata cu. Ad elingendi consulatu necessitatius mel, repu diare perci. Ea pro probatus invenire, vix cu.</div>
-			     		 
+			     		<br>
+			     		<br> 
 						<div class="job_position">Customer Service Representative</div> 
 			     		<div class="job_year">Ipsum SRL Milan | 2002-2004</div>
 			     		<div class="job_description">Lorem ipsum dolor sit amet, fastidii mnesa rchum ei pri. Ut ubique populo iisque sed, pri detracto vituperata cu. Ad elingendi consulatu necessitatius mel, repu diare perci.</div>
-			     		
+			     		<br>
+			     		<br>
 			     		<h3 class="h3_border">EDUCATION &amp; COURSES</h3>
 			     		
 								<div id="mini_left_side">
@@ -284,9 +372,9 @@
 			     					<div class="job_year">MCE | 2004</div>
 								</div>
 			
-			     	</div> <!-- koniec main section -->
+			     	</div> <!-- end main section -->
 			     	
-			     </div>	<!-- koniec row -->
-			</div>	<!-- koniec container -->
+			     </div>	<!-- end 2ndrow -->
+			</div>	<!-- end container -->
     </body>
 </html>
